@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A importância da Cibersegurança</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>A importância da Cibersegurança</h1>
+      <button id="startQuizButton" onclick="startQuiz()">Iniciar Quiz</button>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="intro">
+      <CENTER><h2>O que é Cibersegurança?</h2></CENTER>
+      <p>
+        A cibersegurança envolve a proteção de sistemas e redes contra ameaças digitais como vírus, hackers e roubo de dados.
+        É essencial para garantir a segurança de informações sensíveis e proteger indivíduos e empresas contra crimes cibernéticos. Ao se tratar
+        de empresas, é um fator essencial afim de garantir a preservação de 
+        dados sensiveis, e manter um bom funcionamento a empresa.
+      </p>
+    </section>
+
+    <section class="principios">
+      <h2>Pilares Essenciais</h2>
+      <div class="principios-card">
+        <h3>Confidencialidade</h3>
+        <p>Assegura que as informações são acessíveis apenas para quem tem autorização.</p>
+      </div>
+      <div class="principios-card">
+        <h3>Integridade</h3>
+        <p>Garante que os dados não sejam alterados ou corrompidos de forma não autorizada.</p>
+      </div>
+      <div class="principios-card">
+        <h3>Disponibilidade</h3>
+        <p>Assegura que os dados e sistemas estejam acessíveis quando necessário.</p>
+      </div>
+    </section>
+
+    <section class="info-ciberseguranca">
+      <h2>Principais Ameaças</h2>
+      <ul>
+        <li><strong>Phishing:</strong> Envio de mensagens fraudulentas para roubo de informações.</li>
+        <li><strong>Ransomware:</strong> Ataques que sequestram dados e exigem pagamento.</li>
+        <li><strong>Malware:</strong> Software malicioso que compromete a segurança do sistema.</li>
+      </ul>
+    </section>
+
+    <section class="grafico">
+      <h2>Ataques mais comuns: </h2>
+      <canvas id="cibersegurancaChart"></canvas>
+    </section>
+
+    <center> 
+      <section class="info-ciberseguranca">
+        <h2>Medidas de proteção</h2>
+        <ul>
+          <li><strong>Antivírus e Firewalls:</strong> Ferramentas que bloqueiam ou alertam sobre a presença de softwares maliciosos.</li>
+          <li><strong>Criptografia:</strong> Processo de codificar dados, de forma que apenas usuários autorizados possam acessá-los.</li>
+          <li><strong>Autenticação de dois fatores:</strong> Método que requer que o usuário forneça duas formas de identificação para acessar a conta.</li>
+        </ul>
+      </section>
+    </center>
+    <hr>
+    <!-- Novo conteúdo adicionado abaixo da seção "Medidas de proteção" -->
+    <section class="importancia-ciberseguranca">
+      <h2>A Importância da Cibersegurança nas Empresas</h2>
+      <p>
+          A cibersegurança é fundamental para garantir a proteção de dados e informações sensíveis dentro de uma organização. 
+        Em um ambiente digital cada vez mais complexo e ameaçado, as empresas precisam implementar estratégias de segurança eficazes 
+        para proteger seus sistemas, dados e a privacidade de seus clientes.
+      </p>
+      <p>
+          Um ataque cibernético pode resultar em danos financeiros significativos, perda de dados, danos à reputação e até mesmo 
+        paralisação dos negócios. Investir em medidas de cibersegurança não é apenas uma necessidade tecnológica, mas também 
+        uma estratégia de negócios essencial para garantir a continuidade das operações e a confiança dos clientes.
+      </p>
+      <br>
+
+      <h3>Benefícios da Cibersegurança para as Empresas:</h3>
+      <ul>
+        <li><strong>Proteção de Dados Sensíveis:</strong> Assegura que informações financeiras, dados de clientes e outros dados confidenciais 
+            permaneçam seguros e protegidos contra roubo ou vazamento.</li>
+        <li><strong>Prevenção de Ataques Cibernéticos:</strong> Protege contra ameaças como phishing, malware e ransomware que podem comprometer 
+            a integridade dos sistemas e dados da empresa.</li>
+        <li><strong>Fortalecimento da Reputação:</strong> Empresas que demonstram compromisso com a segurança cibernética ganham a confiança de 
+            seus clientes, parceiros e investidores.</li>
+        <li><strong>Conformidade Regulatória:</strong> Muitas indústrias têm regulamentações rigorosas sobre a proteção de dados. A cibersegurança 
+            ajuda as empresas a atenderem a essas normas e evitarem multas e sanções.</li>
+      </ul>
+      <br> 
+
+      <h3>Como Implementar a Cibersegurança nas Empresas:</h3>
+      <p>
+        A implementação de medidas eficazes de cibersegurança nas empresas envolve várias etapas, como a adoção de firewalls, 
+        criptografia, autenticação de dois fatores e a educação contínua dos funcionários sobre as melhores práticas de segurança.
+        Além disso, as empresas devem ter um plano de resposta a incidentes e um monitoramento constante para detectar e 
+        responder rapidamente a possíveis ameaças.
+      </p>
+    </section>
+
+    <section class="simulador" id="quiz" style="display: none;">
+      <center><h2>Quiz: Isso é Phishing?</h2></center>
+      <div id="emails"></div>
+    </section>
+  </main>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
